@@ -3,7 +3,7 @@
       rgba(18, 70, 51, 0.26),
       rgba(3, 68, 44, 0.562)
     ),
-    url("https://www.tourx-react.egenslab.com/static/media/banner-1.0158ff1d.png");
+    url("https://i.ibb.co/zhMxMX1/balazs-busznyak-El5zu-QAtfeo-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -13,7 +13,7 @@
       rgba(18, 70, 51, 0.26),
       rgba(3, 68, 44, 0.562)
     ),
-    url("https://www.tourx-react.egenslab.com/static/media/banner-3.ff884c34.png");
+    url("https://i.ibb.co/1Rdsv4L/iswanto-arif-u0l-Aovo-Usa-U-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -23,7 +23,7 @@
       rgba(18, 70, 51, 0.26),
       rgba(3, 68, 44, 0.562)
     ),
-    url("https://www.tourx-react.egenslab.com/static/media/banner-4.1478080c.png");
+    url("https://i.ibb.co/X7ctWNk/karimjy-louloua-xx3obk2-I8k-I-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -77,4 +77,33 @@
   background: #ff7f47;
   border-radius: 5px;
   clip-path: circle(150% at 0% 0%);
+}
+
+.card-ex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #304f47;
+  color: white;
+  padding: 30px 0;
+  margin-right: px;
+}
+
+.card-ex .icon {
+  font-size: 70px;
+}
+
+.extra-two {
+  background-image: linear-gradient(
+      rgba(224, 216, 216, 0.753),
+      rgba(218, 203, 203, 0.877)
+    ),
+    url("https://i.ibb.co/99JN5kZ/praveen-kumar-mathivanan-j7q-JLn4-Chzs-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  margin: 40px 0;
 }
