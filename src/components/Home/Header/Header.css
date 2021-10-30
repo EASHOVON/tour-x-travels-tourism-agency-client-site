@@ -1,0 +1,10 @@
+.navbar-custom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 28%;
+}
+
+.navbar-custom a {
+  text-decoration: none;
+}
