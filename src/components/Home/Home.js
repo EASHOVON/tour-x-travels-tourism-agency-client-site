@@ -1,10 +1,12 @@
 import { faHandsHelping, faSmile, faStar, faUsers, faUserTie } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import GroupRoundedIcon from '@mui/icons-material/GroupRounded';
 import React from 'react';
 import { Carousel, Container } from 'react-bootstrap';
 import Footer from './Footer/Footer';
 import Header from './Header/Header';
 import './Home.css'
+import Packages from './Packages/Packages';
 
 const Home = () =>
 {
@@ -58,6 +60,7 @@ const Home = () =>
             <Container className="my-5">
                 <h5 className="text-center">Choose your package</h5>
                 <h1 className="text-center">Select Your Best Package <br />For Your Travel</h1>
+                <Packages></Packages>
             </Container>
             <Container className="my-5">
                 <h5 className="text-center">Why TourX</h5>
@@ -65,7 +68,7 @@ const Home = () =>
                 <div className="row">
                     <div className="col-3 card-ex">
                         <div>
-                            <FontAwesomeIcon className="icon" icon={faUserTie} />
+                            <img className="img-fluid" src="https://i.ibb.co/ZJt68Bn/tour-guide-1.png" alt="" />
                         </div>
                         <div>
                             <h5>2000+ Our <br />worldwide guide</h5>
@@ -73,7 +76,7 @@ const Home = () =>
                     </div>
                     <div className="col-3 card-ex">
                         <div>
-                            <FontAwesomeIcon className="icon" icon={faHandsHelping} />
+                            <img src="https://i.ibb.co/996YSj7/trust.png" alt="" className="img-fluid" />
                         </div>
                         <div>
                             <h5>100% trusted travel <br />worldwide guide</h5>
@@ -81,7 +84,7 @@ const Home = () =>
                     </div>
                     <div className="col-3 card-ex">
                         <div>
-                            <FontAwesomeIcon className="icon" icon={faUsers} />
+                            <img src="https://i.ibb.co/vcbnyTb/experience.png" alt="" className="img-fluid" />
                         </div>
                         <div>
                             <h5>10+ year of travel <br />experience</h5>
@@ -89,7 +92,7 @@ const Home = () =>
                     </div>
                     <div className="col-3 card-ex">
                         <div>
-                            <FontAwesomeIcon className="icon" icon={faSmile} />
+                            <img src="https://i.ibb.co/98Y7H7X/traveller.png" alt="" className="img-fluid" />
                         </div>
                         <div>
                             <h5>90% of our traveller <br />happy</h5>

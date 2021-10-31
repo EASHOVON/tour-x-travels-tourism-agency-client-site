@@ -92,7 +92,8 @@
 }
 
 .card-ex .icon {
-  font-size: 70px;
+  font-size: 200px !important;
+  color: #f57e47;
 }
 
 .extra-two {
