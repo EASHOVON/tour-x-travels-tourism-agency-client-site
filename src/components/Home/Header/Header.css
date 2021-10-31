@@ -5,6 +5,17 @@
   width: 28%;
 }
 
+.navbar-custom-two {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
+
 .navbar-custom a {
+  text-decoration: none;
+}
+
+.navbar-custom-two a {
   text-decoration: none;
 }

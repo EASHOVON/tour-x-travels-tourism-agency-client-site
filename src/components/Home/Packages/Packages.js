@@ -1,4 +1,5 @@
-import { CCard, CCardBody, CCardFooter, CCardImage, CCardText, CCardTitle, CCol, CRow } from '@coreui/react';
+import { CCard, CCardBody, CCardImage, CCardText, CCardTitle, CCol, CRow } from '@coreui/react';
+import { Link } from 'react-router-dom';
 import StarRoundedIcon from '@mui/icons-material/StarRounded';
 import React, { useEffect, useState } from 'react';
 import { Button } from 'react-bootstrap';
@@ -12,6 +13,7 @@ const Packages = () =>
             .then(res => res.json())
             .then(data => setPackages(data))
     }, [])
+
     return (
         <CRow xs={{ cols: 1, gutter: 4 }} md={{ cols: 3 }}>
             {
@@ -36,7 +38,7 @@ const Packages = () =>
                                     <p><StarRoundedIcon /> {service.rating} Rating</p>
                                 </div>
                                 <div className="row">
-                                    <Button>Book Now</Button>
+                                    <Link to={`/book/${ service._id }`}><Button>Book Now</Button></Link>
                                 </div>
                             </CCardBody>
                         </CCard>

@@ -1,3 +1,4 @@
+import { CCard, CCardBody, CCardImage, CCardText, CCardTitle, CCol, CRow } from '@coreui/react';
 import { faHandsHelping, faSmile, faStar, faUsers, faUserTie } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import GroupRoundedIcon from '@mui/icons-material/GroupRounded';
@@ -106,7 +107,22 @@ const Home = () =>
                     <h1 className="text-center mb-5">See Our Best Popular <br />Destinations</h1>
                     <div className="row d-flex justify-content-center">
                         <div className="col-md-5">
-                            <div className="row">
+                            <CCard className="mb-3" style={{ maxWidth: '540px' }}>
+                                <CRow className="g-0">
+                                    <CCol md={4}>
+                                        <CCardImage src="https://tourx-react.egenslab.com/static/media/f-1.7656771a.png" />
+                                    </CCol>
+                                    <CCol md={8}>
+                                        <CCardBody>
+                                            <CCardTitle>Group Travel Go To Bea Amsterdam</CCardTitle>
+                                            <CCardText>
+                                                <small><FontAwesomeIcon className="icon" icon={faStar} /> 7K+Rating</small>
+                                            </CCardText>
+                                        </CCardBody>
+                                    </CCol>
+                                </CRow>
+                            </CCard>
+                            {/* <div className="row">
                                 <div className="col-md-4">
                                     <img className="img-fluid" src="https://tourx-react.egenslab.com/static/media/f-1.7656771a.png" alt="" />
                                 </div>
@@ -115,19 +131,24 @@ const Home = () =>
                                     <small><FontAwesomeIcon className="icon" icon={faStar} /> 7K+Rating</small>
                                     <h4>$190</h4>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                         <div className="col-md-5">
-                            <div className="row">
-                                <div className="col-md-4">
-                                    <img className="img-fluid" src="https://tourx-react.egenslab.com/static/media/f-1.7656771a.png" alt="" />
-                                </div>
-                                <div className="col-md-8">
-                                    <h4>Group Travel Go To Bea <br />Amsterdam</h4>
-                                    <small><FontAwesomeIcon className="icon" icon={faStar} /> 7K+Rating</small>
-                                    <h4>$190</h4>
-                                </div>
-                            </div>
+                            <CCard className="mb-3" style={{ maxWidth: '540px' }}>
+                                <CRow className="g-0">
+                                    <CCol md={4}>
+                                        <CCardImage src="https://tourx-react.egenslab.com/static/media/f-2.e872b0b0.png" />
+                                    </CCol>
+                                    <CCol md={8}>
+                                        <CCardBody>
+                                            <CCardTitle>Amalfi Costa, Italy</CCardTitle>
+                                            <CCardText>
+                                                <small><FontAwesomeIcon className="icon" icon={faStar} /> 9K+Rating</small>
+                                            </CCardText>
+                                        </CCardBody>
+                                    </CCol>
+                                </CRow>
+                            </CCard>
                         </div>
                     </div>
                 </Container>

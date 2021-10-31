@@ -13,14 +13,14 @@ const Footer = () =>
 {
     return (
         <div className="footer-main">
-            <Container>
+            <Container className="pt-5">
                 <div className="row footer-details">
                     <div className="col-md-4">
                         <div>
                             <img src="https://i.ibb.co/PcvzLCV/logo.png" alt="" />
                         </div>
                         <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid maxime aut ut voluptate dolorum nisi ducimus ratione
+                            Trusted results for Your Search Query. Check Visymo Search for the best results! Unlimited Access. 100% Secure. Always Facts. Privacy Friendly. The Best Resources. Results & Answers. Types: Best Results, Explore Now, New Sources, Best in Search.
                         </p>
                         <h4>Follow Us:</h4>
                         <div>
