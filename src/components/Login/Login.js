@@ -14,25 +14,11 @@ const Login = () =>
         isLoading } = useAuth();
     const location = useLocation();
     const history = useHistory();
-    const redirect_uri = location.state?.from || '/';
-    console.log(isLoading);
+
     if (isLoading)
     {
-        return <Spinner className="mt-5 text-center" animation="grow" />
+        return <div className="d-flex justify-content-center align-items-center"><Spinner animation="grow" /></div>
     }
-    // const handleGoogleLogin = () =>
-    // {
-    //     googleSignIn()
-    //         .then(result =>
-    //         {
-    //             history.push(redirect_uri);
-    //         })
-    //         .finaly(() =>
-    //         {
-    //             // setIsLoading(false)
-    //         })
-    // }
-
 
     return (
         <div>
@@ -40,7 +26,7 @@ const Login = () =>
             {/* condition  */}
             {user.email ? (
                 // components
-                location.state?.from == undefined ? (
+                location.state?.from === undefined ? (
                     history.push("/")
                 ) : (
                     history.push(`${ location.state?.from?.pathname }`)

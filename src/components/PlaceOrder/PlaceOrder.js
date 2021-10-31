@@ -1,4 +1,4 @@
-import { CCard, CCardBody, CCardImage, CCardLink, CCardText, CCardTitle, CListGroup, CListGroupItem } from '@coreui/react';
+import { CCard, CCardBody, CCardImage, CCardText, CCardTitle, CListGroup, CListGroupItem } from '@coreui/react';
 import React, { useEffect, useState } from 'react';
 import { Container } from 'react-bootstrap';
 import { useParams } from 'react-router';
@@ -9,13 +9,12 @@ const PlaceOrder = () =>
     const { bookingId } = useParams();
 
     const { user } = useAuth();
-    console.log(user);
     const [details, setDetails] = useState([]);
     const [detail, setDetail] = useState({});
 
     useEffect(() =>
     {
-        fetch('http://localhost:5000/packages')
+        fetch('https://wicked-mummy-37996.herokuapp.com/packages')
             .then(res => res.json())
             .then(data =>
             {
@@ -23,15 +22,15 @@ const PlaceOrder = () =>
                 setDetails(data)
             })
     }, [])
-    console.log(details);
-    // console.log(details.img);
+
+
     useEffect(() =>
     {
         const foundDetails = details.find(detail => detail._id === bookingId)
         setDetail(foundDetails)
     }, [bookingId, details])
 
-    console.log(detail);
+
     const handleOrderSubmit = (e) =>
     {
         e.preventDefault();
@@ -44,7 +43,7 @@ const PlaceOrder = () =>
         const time = detail.time;
         const rating = detail.rating
         const ordersInfo = { email, tourId, name, time, rating, description, img, price };
-        fetch("http://localhost:5000/orders", {
+        fetch("https://wicked-mummy-37996.herokuapp.com/orders", {
             method: "POST",
             headers: {
                 "content-type": "application/json",

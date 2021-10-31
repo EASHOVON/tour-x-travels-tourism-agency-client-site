@@ -9,7 +9,7 @@ const MyOrders = () =>
     const { user } = useAuth();
     useEffect(() =>
     {
-        fetch(`http://localhost:5000/orders/${ user.email }`)
+        fetch(`https://wicked-mummy-37996.herokuapp.com/orders/${ user.email }`)
             .then((res) => res.json())
             .then((data) => setOrders(data));
     }, [user.email]);
@@ -19,14 +19,13 @@ const MyOrders = () =>
         const confirm = window.confirm("Are you sure, you wanna delete this?");
         if (confirm)
         {
-            const url = `http://localhost:5000/orders/${ id }`;
+            const url = `https://wicked-mummy-37996.herokuapp.com/orders/${ id }`;
             fetch(url, {
                 method: "DELETE",
             })
                 .then((res) => res.json())
                 .then((data) =>
                 {
-                    console.log(data);
                     if (data.deletedCount)
                     {
                         const remaining = orders.filter((order) => order._id !== id);
@@ -35,6 +34,7 @@ const MyOrders = () =>
                 });
         }
     };
+
     return (
         <Container className="py-5">
             <h2 className="text-center">My Orders</h2>
@@ -51,7 +51,7 @@ const MyOrders = () =>
                                 </CCardText>
                             </CCardBody>
                             <CCardFooter>
-                                <Button onClick={handleDelete}>Delete</Button>
+                                <Button onClick={() => handleDelete(order._id)}>Delete</Button>
                             </CCardFooter>
                         </CCard>
                     ))

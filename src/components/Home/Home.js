@@ -1,7 +1,7 @@
 import { CCard, CCardBody, CCardImage, CCardText, CCardTitle, CCol, CRow } from '@coreui/react';
-import { faHandsHelping, faSmile, faStar, faUsers, faUserTie } from '@fortawesome/free-solid-svg-icons';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import GroupRoundedIcon from '@mui/icons-material/GroupRounded';
+
 import React from 'react';
 import { Carousel, Container } from 'react-bootstrap';
 import Footer from './Footer/Footer';
@@ -122,16 +122,6 @@ const Home = () =>
                                     </CCol>
                                 </CRow>
                             </CCard>
-                            {/* <div className="row">
-                                <div className="col-md-4">
-                                    <img className="img-fluid" src="https://tourx-react.egenslab.com/static/media/f-1.7656771a.png" alt="" />
-                                </div>
-                                <div className="col-md-8">
-                                    <h4>Group Travel Go To Bea <br />Amsterdam</h4>
-                                    <small><FontAwesomeIcon className="icon" icon={faStar} /> 7K+Rating</small>
-                                    <h4>$190</h4>
-                                </div>
-                            </div> */}
                         </div>
                         <div className="col-md-5">
                             <CCard className="mb-3" style={{ maxWidth: '540px' }}>

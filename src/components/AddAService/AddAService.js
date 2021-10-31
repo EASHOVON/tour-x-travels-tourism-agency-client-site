@@ -23,7 +23,7 @@ const AddAService = () =>
             name, price, time, rating, description
             , img
         }
-        fetch('http://localhost:5000/packages', {
+        fetch('https://wicked-mummy-37996.herokuapp.com/packages', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

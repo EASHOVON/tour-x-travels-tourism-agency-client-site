@@ -16,7 +16,7 @@ const Header = () =>
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className={user.email ? "mx-auto navbar-custom-two" : "mx-auto navbar-custom"}>
                         <NavLink
-                            className="link"
+                            className="link fs-6"
                             to="/home"
                             activeStyle={{
                                 fontWeight: "bold",
@@ -26,7 +26,7 @@ const Header = () =>
                             Home
                         </NavLink>
                         <NavLink
-                            className="link"
+                            className="link fs-6"
                             to="/about"
                             activeStyle={{
                                 fontWeight: "bold",
@@ -36,7 +36,7 @@ const Header = () =>
                             About Us
                         </NavLink>
                         {user.email && <NavLink
-                            className="link"
+                            className="link fs-6"
                             to="/addAService"
                             activeStyle={{
                                 fontWeight: "bold",
@@ -44,7 +44,7 @@ const Header = () =>
                             }}
                         >Add A New Service</NavLink>}
                         {user.email && <NavLink
-                            className="link"
+                            className="link fs-6"
                             to="/myOrders"
                             activeStyle={{
                                 fontWeight: "bold",
@@ -52,8 +52,8 @@ const Header = () =>
                             }}
                         >My Orders</NavLink>}
                         {user.email && <NavLink
-                            className="link"
-                            to="/manageOrders"
+                            className="link fs-6"
+                            to="/allorders"
                             activeStyle={{
                                 fontWeight: "bold",
                                 color: "#FF7F47"
@@ -65,7 +65,7 @@ const Header = () =>
                                 <Button onClick={logOut}>Logout</Button>
                                 :
                                 <NavLink
-                                    className="link"
+                                    className="link fs-6"
                                     to="/login"
                                     activeStyle={{
                                         fontWeight: "bold",

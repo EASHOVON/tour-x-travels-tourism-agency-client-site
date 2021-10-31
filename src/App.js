@@ -48,7 +48,7 @@ function App()
               <MyOrders></MyOrders>
               <Footer></Footer>
             </Route>
-            <Route path="/manageOrders">
+            <Route path="/allorders">
               <Header></Header>
               <ManageAllOrders></ManageAllOrders>
               <Footer></Footer>
